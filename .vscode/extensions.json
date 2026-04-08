@@ -1,0 +1,15 @@
+{
+  "extensions": {
+    "recommendations": [
+      "abusaidm.html-snippets",
+      "formulahendry.auto-rename-tag",
+      "mhutchie.git-graph",
+      "eamodio.gitlens",
+      "MS-CEINTL.vscode-language-pack-ja",
+      "ritwickdey.LiveServer",
+      "christian-kohler.path-intellisense",
+      "esbenp.prettier-vscode",
+      "vscode-icons-team.vscode-icons"
+    ]
+  }
+}

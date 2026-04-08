@@ -1,0 +1,72 @@
+{
+  // ようこそのタブを非表示
+  "workbench.startupEditor": "none",
+
+  // アイコン
+  "workbench.iconTheme": "vscode-icons",
+
+  // エディタのフォントサイズ
+  //　ここはお好みで！
+  "editor.fontSize": 15,
+
+  // ターミナルのフォントサイズ
+  //　ここはお好みで！
+  "terminal.integrated.fontSize": 15,
+
+  // ファイルを削除するときに確認しない
+  "explorer.confirmDelete": false,
+
+  // コード整形のタイミング
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+
+  // ファイルの自動保存
+  "files.autoSave": "afterDelay",
+
+  // タブサイズ
+  "editor.tabSize": 2,
+
+  // 文字の折り返し
+  "editor.wordWrap": "off",
+
+  // ミニマップ
+  "editor.minimap.enabled": false,
+
+  // ホバーしたときのポップアップを非表示
+  "editor.hover.enabled": "off",
+
+  // Tabキーでemmetを展開
+  "emmet.triggerExpansionOnTab": true,
+
+  // emmetで作成するHTMLのテンプレートの設定
+  "emmet.variables": {
+    "lang": "ja"
+  },
+
+  // HTMLのフォーマット
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // JSはフォーマットしない
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+
+  // JSONもフォーマットしない
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+
+  // JSONのフォーマット
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "prettier.printWidth": 120,
+  "prettier.bracketSameLine": true,
+  "prettier.trailingComma": "all"
+}
