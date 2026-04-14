@@ -134,7 +134,7 @@ function openMo(id) {
     return x.id === id;
   })[0];
   if (!w) return;
-  document.getElementById("mEmoji").textContent = w.emoji;
+  document.getElementById("mImg").src = w.img;
   document.getElementById("mDate").textContent = w.month;
   document.getElementById("mTitle").textContent = w.title;
   document.getElementById("mDesc").textContent = w.desc;

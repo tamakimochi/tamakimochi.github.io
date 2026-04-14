@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tamaki_mochi | ボイスポートフォリオ</title>
+    <title>たまき もち | ボイスポートフォリオ</title>
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Zen+Old+Mincho:wght@400;700;900&family=Shippori+Mincho:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Zen+Old+Mincho:wght@400;700;900&family=Shippori+Mincho:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Sans+JP:wght@400;500;700&display=swap"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/stylesheet.css" />
   </head>
   <body>
@@ -17,7 +21,10 @@
 
     <!-- HEADER -->
     <header class="sh">
-      <a href="" class="logo">tamaki_mochi<small>Voice Portfolio</small></a>
+      <a href="#" class="logo">
+        <span class="logo-en">Voice Portfolio</span>
+        <span class="logo-ja">tamaki_mochi</span>
+      </a>
       <nav>
         <ul class="snav">
           <li><a href="#voice">サンプルボイス</a></li>
@@ -28,8 +35,12 @@
         </ul>
       </nav>
       <div class="hso">
-        <a href="https://www.youtube.com/@tamaki_mochi" target="_blank" rel="noopener" title="YouTube">▶</a>
-        <a href="https://x.com/tamaki_mochi2" target="_blank" rel="noopener" title="X">𝕏</a>
+        <a href="https://www.youtube.com/@tamaki_mochi" target="_blank" rel="noopener" title="YouTube"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://x.com/tamaki_mochi2" target="_blank" rel="noopener" title="X"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
       </div>
       <button class="hbg" id="hbg" aria-label="メニュー"><span></span><span></span><span></span></button>
     </header>
@@ -41,8 +52,12 @@
       <!-- <a href="#works" onclick="cM()">お仕事実績</a> -->
       <a href="#contact" onclick="cM()">お問い合わせ</a>
       <div class="mso">
-        <a href="https://www.youtube.com/@tamaki_mochi" target="_blank" rel="noopener">▶</a>
-        <a href="https://x.com/tamaki_mochi2" target="_blank" rel="noopener">𝕏</a>
+        <a href="https://www.youtube.com/@tamaki_mochi" target="_blank" rel="noopener" title="YouTube"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://x.com/tamaki_mochi2" target="_blank" rel="noopener" title="X"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
       </div>
     </nav>
 
@@ -59,15 +74,21 @@
           <p class="hl">
             落ち着いた響きで、日常に癒しのひとときを<br />あなたの世界に声をお届けします。<br />CM・ドキュメンタリー・絵本朗読など幅広く対応。
           </p>
-          <a href="#voice" class="hcta">🎙 サンプルボイスを聴く</a>
+          <a href="#voice" class="hcta"><i class="fa-solid fa-microphone"></i> サンプルボイスを聴く</a>
         </div>
         <div class="hv">
           <div class="hrng"></div>
           <div class="hrng"></div>
-          <div class="hfr"><img src="./img/tamaki_touka_2.png" alt="tamaki_mochi" class="hfr-img" /></div>
+          <div class="hfr">
+            <img src="./img/tamaki_mochi.png" alt="たまきもち" class="hfr-img" />
+          </div>
           <div class="hbdg">
-            <a href="https://www.youtube.com/@tamaki_mochi" target="_blank" rel="noopener" title="YouTube">▶</a>
-            <a href="https://x.com/tamaki_mochi2" target="_blank" rel="noopener" title="X">𝕏</a>
+            <a href="https://www.youtube.com/@tamaki_mochi" target="_blank" rel="noopener" title="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://x.com/tamaki_mochi2" target="_blank" rel="noopener" title="X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -90,19 +111,19 @@
               <div class="wf" id="wf0"></div>
               <p class="vct">CMナレーション</p>
               <p class="vcd">商品・サービスを柔らかく、親しみやすいトーンでお届けします。</p>
-              <button class="pb" data-id="cm"><span>▶</span> 再生する</button>
+              <button class="pb" data-id="cm"><i class="fa-solid fa-play"></i> 再生する</button>
             </div>
             <div class="vc reveal">
               <div class="wf" id="wf1"></div>
               <p class="vct">ドキュメンタリーナレーション</p>
               <p class="vcd">落ち着いた知性あるトーンで、情景や事実を丁寧に語りかけます。</p>
-              <button class="pb" data-id="doc"><span>▶</span> 再生する</button>
+              <button class="pb" data-id="doc"><i class="fa-solid fa-play"></i> 再生する</button>
             </div>
             <div class="vc reveal">
               <div class="wf" id="wf2"></div>
-              <p class="vct">キャラクターナレーション</p>
-              <p class="vcd">耳に心地よく、心を掴む声をお届けします。</p>
-              <button class="pb" data-id="ehon"><span>▶</span> 再生する</button>
+              <p class="vct">絵本の朗読</p>
+              <p class="vcd">子どもの心に届くやさしい声で、物語の世界を生き生きと表現します。</p>
+              <button class="pb" data-id="ehon"><i class="fa-solid fa-play"></i> 再生する</button>
             </div>
           </div>
         </div>
@@ -112,19 +133,19 @@
               <div class="wf" id="wf3"></div>
               <p class="vct">少年</p>
               <p class="vcd">元気で純粋な、少年らしいエネルギーあふれる声。</p>
-              <button class="pb" data-id="boy"><span>▶</span> 再生する</button>
+              <button class="pb" data-id="boy"><i class="fa-solid fa-play"></i> 再生する</button>
             </div>
             <div class="vc reveal">
               <div class="wf" id="wf4"></div>
               <p class="vct">少女</p>
               <p class="vcd">かわいらしく透き通るような、少女らしいさわやかな声。</p>
-              <button class="pb" data-id="girl"><span>▶</span> 再生する</button>
+              <button class="pb" data-id="girl"><i class="fa-solid fa-play"></i> 再生する</button>
             </div>
             <div class="vc reveal">
               <div class="wf" id="wf5"></div>
               <p class="vct">成人女性</p>
               <p class="vcd">落ち着きと温かみを兼ね備えた、信頼感のある大人の女性の声。</p>
-              <button class="pb" data-id="woman"><span>▶</span> 再生する</button>
+              <button class="pb" data-id="woman"><i class="fa-solid fa-play"></i> 再生する</button>
             </div>
           </div>
         </div>
@@ -139,7 +160,9 @@
           <h2 class="st">プロフィール</h2>
         </div>
         <div class="pri">
-          <div class="pimg reveal"><img src="./img/tamaki_touka_2.png" alt="tamaki_mochi" class="pimg-img" /></div>
+          <div class="pimg reveal">
+            <img src="./img/tamaki_mochi.png" alt="たまきもち" class="pimg-img" />
+          </div>
           <div class="pb2 reveal">
             <p class="pen">たまき もち</p>
             <h2 class="pja">tamaki_mochi</h2>
@@ -176,25 +199,121 @@
           <p class="sl">Pricing</p>
           <h2 class="st">料金表</h2>
         </div>
-        <div class="pcg reveal">
-          <div class="pc">
-            <div class="pci">📄</div>
-            <p class="pcn">テキスト読み上げ / ナレーション</p>
-            <p class="pcd">台本・原稿のナレーション録音。文字数に応じてご案内いたします。</p>
-            <p class="pcp">¥10,000〜<span>/ 1,000文字あたり</span></p>
+
+        <!-- ナレーション -->
+        <div class="ptab reveal">
+          <div class="ptab-head">
+            <i class="fa-solid fa-microphone ptab-icon"></i>
+            <div>
+              <p class="ptab-en">Narration</p>
+              <h3 class="ptab-ja">ナレーション</h3>
+            </div>
           </div>
-          <div class="pc">
-            <div class="pci">🎬</div>
-            <p class="pcn">漫画動画・解説動画など</p>
-            <p class="pcd">ショート〜5分程度の動画向けナレーション。1本単位でご依頼いただけます。</p>
-            <p class="pcp">¥5,000〜<span>/ 1本（〜5分程度）</span></p>
+          <div class="ptab-body">
+            <div class="ptab-col">
+              <p class="ptab-section-label">
+                <i class="fa-solid fa-star"></i> 基本プラン <span class="ptab-note-inline">修正1回込み</span>
+              </p>
+              <div class="ptab-rows">
+                <div class="ptab-row plan-row">
+                  <span class="ptab-item">〜500文字（1〜2分程度）</span>
+                  <span class="ptab-price">¥3,000〜</span>
+                </div>
+                <div class="ptab-row plan-row">
+                  <span class="ptab-item">〜1,000文字（2〜4分程度）</span>
+                  <span class="ptab-price">¥6,000〜</span>
+                </div>
+              </div>
+            </div>
+            <div class="ptab-col">
+              <p class="ptab-section-label"><i class="fa-solid fa-plus"></i> オプション（例）</p>
+              <div class="ptab-rows">
+                <div class="ptab-row">
+                  <span class="ptab-item">追加500文字</span>
+                  <span class="ptab-price ptab-add">+¥2,000</span>
+                </div>
+                <div class="ptab-row">
+                  <span class="ptab-item">即日・翌日納品</span>
+                  <span class="ptab-price ptab-add">+¥3,000</span>
+                </div>
+                <div class="ptab-row">
+                  <span class="ptab-item">商用利用権（二次利用）</span>
+                  <span class="ptab-price ptab-add">+30%〜50%</span>
+                </div>
+                <div class="ptab-row">
+                  <span class="ptab-item">修正追加1回</span>
+                  <span class="ptab-price ptab-add">+¥2,000</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- キャラクターボイス -->
+        <div class="ptab reveal">
+          <div class="ptab-head ptab-head-chara">
+            <i class="fa-solid fa-user-pen ptab-icon"></i>
+            <div>
+              <p class="ptab-en">Character Voice</p>
+              <h3 class="ptab-ja">キャラクターボイス</h3>
+              <p class="ptab-sub">宅録・税別</p>
+            </div>
+          </div>
+          <div class="ptab-body">
+            <div class="ptab-col">
+              <p class="ptab-section-label">
+                <i class="fa-solid fa-star"></i> 基本プラン
+                <span class="ptab-note-inline">修正2回まで・ノイズ処理込み</span>
+              </p>
+              <div class="ptab-rows">
+                <div class="ptab-row plan-row">
+                  <span class="ptab-item">短めセリフ（〜300文字 / 10〜20フレーズ）</span>
+                  <span class="ptab-price">¥4,000〜</span>
+                </div>
+                <div class="ptab-row plan-row">
+                  <span class="ptab-item">中規模セリフ（〜700文字 / 30〜50フレーズ）</span>
+                  <span class="ptab-price">¥8,000〜</span>
+                </div>
+                <div class="ptab-row plan-row">
+                  <span class="ptab-item">複数シーン・複数キャラ対応（〜1,500文字）</span>
+                  <span class="ptab-price">¥18,000〜</span>
+                </div>
+              </div>
+            </div>
+            <div class="ptab-col">
+              <p class="ptab-section-label"><i class="fa-solid fa-plus"></i> オプション（例）</p>
+              <div class="ptab-rows">
+                <div class="ptab-row">
+                  <span class="ptab-item">感情表現が複雑な演技（泣き・叫びなど）</span>
+                  <span class="ptab-price ptab-add">+¥3,000〜</span>
+                </div>
+                <div class="ptab-row">
+                  <span class="ptab-item">複数キャラ同時収録（2キャラ以上）</span>
+                  <span class="ptab-price ptab-add">+30%〜</span>
+                </div>
+                <div class="ptab-row">
+                  <span class="ptab-item">即日・翌日納品</span>
+                  <span class="ptab-price ptab-add">+¥5,000</span>
+                </div>
+                <div class="ptab-row">
+                  <span class="ptab-item">商用利用権（ゲーム公開・二次利用）</span>
+                  <span class="ptab-price ptab-add">+30%〜50%</span>
+                </div>
+                <div class="ptab-row">
+                  <span class="ptab-item">スタジオ収録希望の場合</span>
+                  <span class="ptab-price ptab-add">+実費</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 注意事項 -->
         <div class="pn reveal">
-          <p>※ 全年齢のみ対応しております。</p>
-          <p>※ 料金はあくまで目安です。ご依頼をご検討の際はぜひお気軽にお問い合わせください。</p>
-          <p>※ ノイズカット・ボイスカットなどの編集については、別途編集代を頂戴いたします。</p>
-          <p>※ お急ぎの場合には、特急料金の上乗せにてお引き受けする場合がございます。</p>
+          <p>※ 全年齢のもののみ対応可能です。</p>
+          <p>※ セリフ量・感情の指示・使用用途によって調整可能です。ご相談ください。</p>
+          <p>※ こちらは目安です。詳細はお問い合わせください。詳細をお聞きした上で、正式なお見積もりをお出しします。</p>
+          <p>※ 実績ゼロのため、初回お試し価格として上記を設定しています。お気軽にご相談ください。</p>
         </div>
       </div>
     </section>
@@ -223,13 +342,15 @@
             </div>
             <div class="fr">
               <label class="fl">お問い合わせ種別</label>
-              <select class="fse" id="ft">
-                <option value="">選択してください</option>
-                <option>お仕事のご依頼</option>
-                <option>料金・納期のご相談</option>
-                <option>サンプルについて</option>
-                <option>その他</option>
-              </select>
+              <div class="fse-wrap">
+                <select class="fse" id="ft">
+                  <option value="">選択してください</option>
+                  <option>お仕事のご依頼</option>
+                  <option>料金・納期のご相談</option>
+                  <option>サンプルについて</option>
+                  <option>その他</option>
+                </select>
+              </div>
             </div>
             <div class="fr">
               <label class="fl">件名<span class="rq">必須</span></label
@@ -246,7 +367,7 @@
             <button type="button" class="sb" onclick="doSend()">🍮 送信する</button>
             <p class="fn">
               送信ボタンを押すとメーラーが開きます。内容をご確認の上、そのまま送信してください。<br />メーラーが開かない場合は、直接
-              <a id="ml" href="mailto:tamakimochi1116@gmail.com">tamakimochi1116@gmail.com</a>
+              <a id="ml" href="#">こちら</a>
               までご連絡ください。<br />迷惑メールの設定によっては返信メールが届かない場合がございます。<br />お返事がない際は、迷惑メールフォルダもあわせてご確認いただけますと幸いです。
             </p>
           </form>
@@ -255,7 +376,7 @@
     </section>
 
     <!-- WORKS -->
-    <!-- <section class="ws" id="works">
+    <section class="ws" id="works">
       <div class="si">
         <div class="sh2 reveal">
           <p class="sl">Works</p>
@@ -264,7 +385,7 @@
         <div class="wg reveal" id="wGrid"></div>
         <div class="va reveal"><button class="vab" onclick="openAll()">View All →</button></div>
       </div>
-    </section> -->
+    </section>
 
     <!-- FOOTER -->
     <footer class="sf">
@@ -277,8 +398,12 @@
               声優・ナレーターとして活動中。<br />落ち着いた響きで、日常に癒しのひとときを。<br />あなたのコンテンツを彩ります。
             </p>
             <div class="fso">
-              <a href="https://www.youtube.com/@tamaki_mochi" target="_blank" rel="noopener" title="YouTube">▶</a>
-              <a href="https://x.com/tamaki_mochi2" target="_blank" rel="noopener" title="X">𝕏</a>
+              <a href="https://www.youtube.com/@tamaki_mochi" target="_blank" rel="noopener" title="YouTube"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="https://x.com/tamaki_mochi2" target="_blank" rel="noopener" title="X"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
             </div>
           </div>
           <div>
@@ -293,13 +418,14 @@
           </div>
           <div>
             <p class="fct">Info</p>
-            <ul class="fll">
-              <p class="ftg">宅録対応<br />納品形式：wav / mp3 / flac</p>
+            <ul class="fll fll-plain">
+              <li>宅録対応</li>
+              <li>納品形式：wav / mp3 / flac</li>
             </ul>
           </div>
         </div>
         <div class="fb2">
-          <p class="fcp">© 2025 Tamaki Mochi. All Rights Reserved.</p>
+          <p class="fcp">© 2025 tamaki_mochi. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
@@ -310,7 +436,7 @@
         <button class="mcl" onclick="cMo()">✕</button>
         <div class="mhero">
           <div class="mhd"></div>
-          <span id="mEmoji"></span>
+          <img id="mImg" src="./img/tamaki_mochi.png" alt="modalImg" class="mhero-img" />
         </div>
         <div class="mbd">
           <div class="mtr" id="mTags"></div>
