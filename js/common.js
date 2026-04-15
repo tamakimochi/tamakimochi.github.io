@@ -111,108 +111,108 @@ document.querySelectorAll(".vt").forEach(function (tab) {
 /* =====================
   WORKS CARD RENDER
 ===================== */
-function mkCard(w, container) {
-  var d = document.createElement("div");
-  d.className = "wc";
-  d.innerHTML =
-    '<p class="wm">' + w.month + '</p><p class="wti">' + w.title + '</p><span class="wtg">' + w.tag + "</span>";
-  d.addEventListener("click", function () {
-    openMo(w.id);
-  });
-  container.appendChild(d);
-}
-var wGrid = document.getElementById("wGrid");
-WD.slice(0, 6).forEach(function (w) {
-  mkCard(w, wGrid);
-});
+// function mkCard(w, container) {
+//   var d = document.createElement("div");
+//   d.className = "wc";
+//   d.innerHTML =
+//     '<p class="wm">' + w.month + '</p><p class="wti">' + w.title + '</p><span class="wtg">' + w.tag + "</span>";
+//   d.addEventListener("click", function () {
+//     openMo(w.id);
+//   });
+//   container.appendChild(d);
+// }
+// var wGrid = document.getElementById("wGrid");
+// WD.slice(0, 6).forEach(function (w) {
+//   mkCard(w, wGrid);
+// });
 
 /* =====================
   MODAL
 ===================== */
-function openMo(id) {
-  var w = WD.filter(function (x) {
-    return x.id === id;
-  })[0];
-  if (!w) return;
-  document.getElementById("mImg").src = w.img;
-  document.getElementById("mDate").textContent = w.month;
-  document.getElementById("mTitle").textContent = w.title;
-  document.getElementById("mDesc").textContent = w.desc;
-  document.getElementById("mTags").innerHTML = '<span class="mtg">' + w.tag + "</span>";
-  document.getElementById("mMeta").innerHTML =
-    '<div class="mmi"><p class="mml">Client</p><p class="mmv">' +
-    w.client +
-    "</p></div>" +
-    '<div class="mmi"><p class="mml">Format</p><p class="mmv">' +
-    w.format +
-    "</p></div>" +
-    '<div class="mmi"><p class="mml">Duration</p><p class="mmv">' +
-    w.duration +
-    "</p></div>" +
-    '<div class="mmi"><p class="mml">Delivery</p><p class="mmv">' +
-    w.delivery +
-    "</p></div>";
-  document.getElementById("mo").classList.add("open");
-  document.body.style.overflow = "hidden";
-}
-function cMo() {
-  document.getElementById("mo").classList.remove("open");
-  document.body.style.overflow = "";
-}
-function oMOC(e) {
-  if (e.target === document.getElementById("mo")) cMo();
-}
+// function openMo(id) {
+//   var w = WD.filter(function (x) {
+//     return x.id === id;
+//   })[0];
+//   if (!w) return;
+//   document.getElementById("mImg").src = w.img;
+//   document.getElementById("mDate").textContent = w.month;
+//   document.getElementById("mTitle").textContent = w.title;
+//   document.getElementById("mDesc").textContent = w.desc;
+//   document.getElementById("mTags").innerHTML = '<span class="mtg">' + w.tag + "</span>";
+//   document.getElementById("mMeta").innerHTML =
+//     '<div class="mmi"><p class="mml">Client</p><p class="mmv">' +
+//     w.client +
+//     "</p></div>" +
+//     '<div class="mmi"><p class="mml">Format</p><p class="mmv">' +
+//     w.format +
+//     "</p></div>" +
+//     '<div class="mmi"><p class="mml">Duration</p><p class="mmv">' +
+//     w.duration +
+//     "</p></div>" +
+//     '<div class="mmi"><p class="mml">Delivery</p><p class="mmv">' +
+//     w.delivery +
+//     "</p></div>";
+//   document.getElementById("mo").classList.add("open");
+//   document.body.style.overflow = "hidden";
+// }
+// function cMo() {
+//   document.getElementById("mo").classList.remove("open");
+//   document.body.style.overflow = "";
+// }
+// function oMOC(e) {
+//   if (e.target === document.getElementById("mo")) cMo();
+// }
 
 /* =====================
   WORKS ALL
 ===================== */
-var curFilt = "すべて";
-function renderFilt() {
-  var el = document.getElementById("wFilt");
-  el.innerHTML = "";
-  ALL_TAGS.forEach(function (tag) {
-    var b = document.createElement("button");
-    b.className = "fb" + (tag === curFilt ? " active" : "");
-    b.textContent = tag;
-    b.addEventListener("click", function () {
-      curFilt = tag;
-      renderFilt();
-      renderAll();
-    });
-    el.appendChild(b);
-  });
-}
-function renderAll() {
-  var g = document.getElementById("wAllG");
-  g.innerHTML = "";
-  var list =
-    curFilt === "すべて"
-      ? WD
-      : WD.filter(function (w) {
-          return w.tag === curFilt;
-        });
-  list.forEach(function (w) {
-    mkCard(w, g);
-  });
-}
-function openAll() {
-  curFilt = "すべて";
-  renderFilt();
-  renderAll();
-  document.getElementById("wa").classList.add("open");
-  document.body.style.overflow = "hidden";
-}
-function cAll() {
-  document.getElementById("wa").classList.remove("open");
-  document.body.style.overflow = "";
-}
+// var curFilt = "すべて";
+// function renderFilt() {
+//   var el = document.getElementById("wFilt");
+//   el.innerHTML = "";
+//   ALL_TAGS.forEach(function (tag) {
+//     var b = document.createElement("button");
+//     b.className = "fb" + (tag === curFilt ? " active" : "");
+//     b.textContent = tag;
+//     b.addEventListener("click", function () {
+//       curFilt = tag;
+//       renderFilt();
+//       renderAll();
+//     });
+//     el.appendChild(b);
+//   });
+// }
+// function renderAll() {
+//   var g = document.getElementById("wAllG");
+//   g.innerHTML = "";
+//   var list =
+//     curFilt === "すべて"
+//       ? WD
+//       : WD.filter(function (w) {
+//           return w.tag === curFilt;
+//         });
+//   list.forEach(function (w) {
+//     mkCard(w, g);
+//   });
+// }
+// function openAll() {
+//   curFilt = "すべて";
+//   renderFilt();
+//   renderAll();
+//   document.getElementById("wa").classList.add("open");
+//   document.body.style.overflow = "hidden";
+// }
+// function cAll() {
+//   document.getElementById("wa").classList.remove("open");
+//   document.body.style.overflow = "";
+// }
 
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape") {
-    cMo();
-    cAll();
-  }
-});
+// document.addEventListener("keydown", function (e) {
+//   if (e.key === "Escape") {
+//     cMo();
+//     cAll();
+//   }
+// });
 
 /* =====================
   CONTACT
