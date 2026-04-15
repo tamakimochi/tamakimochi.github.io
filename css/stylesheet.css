@@ -635,6 +635,54 @@ section {
   flex: 1;
 }
 
+.vc-credit {
+  font-size: .68rem;
+  color: var(--sub3);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-top: 1px solid var(--bc);
+  padding-top: 10px;
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+.vc-credit i {
+  font-size: .6rem;
+  opacity: .7;
+  flex-shrink: 0;
+}
+
+.vc-credit a {
+  color: var(--sub2);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(217, 101, 35, .3);
+  transition: border-color .2s;
+}
+
+.vc-credit a:hover {
+  border-bottom-color: var(--sub2);
+}
+
+.vc-credit-note {
+  margin-top: 20px;
+  text-align: center;
+  font-size: .75rem;
+  color: #999;
+  line-height: 1.8;
+}
+
+.vc-credit-note a {
+  color: var(--sub2);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(217, 101, 35, .3);
+  transition: border-color .2s;
+}
+
+.vc-credit-note a:hover {
+  border-bottom-color: var(--sub2);
+}
+
 /* WAVEFORM */
 .wf {
   height: 44px;

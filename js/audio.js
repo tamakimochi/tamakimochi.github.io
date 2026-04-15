@@ -7,9 +7,9 @@ var MP3_FILES = {
   cm: "./audio/CMナレーション.mp3",
   doc: "./audio/ドキュメンタリーナレーション.mp3",
   ehon: "./audio/キャラナレーション.mp3",
-  boy: "./audio/sample4.mp3",
-  girl: "./audio/sample5.mp3",
-  woman: "./audio/sample6.mp3",
+  boy: "./audio/少年ボイス.mp3",
+  girl: "./audio/少女ボイス.mp3",
+  woman: "./audio/女性ボイス.mp3",
 };
 
 // 現在再生中のAudio要素
